@@ -14,7 +14,7 @@ Url:		http://octave.sourceforge.net/linear-algebra/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Conflicts:	octave-forge <= 20090607
 Requires:	octave >= 3.2.3
-BuildRequires:	octave-devel >= 3.2.3, MesaGL-devel, MesaGLU-devel
+BuildRequires:	octave-devel >= 3.2.3, GL-devel, GLU-devel
 
 %description
 Additional linear algebra functions for Octave.
