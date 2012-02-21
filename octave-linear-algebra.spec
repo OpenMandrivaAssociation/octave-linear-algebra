@@ -1,6 +1,6 @@
 %define	pkgname linear-algebra
 %define name	octave-%{pkgname}
-%define version 2.0.0
+%define version 2.1.0
 %define release %mkrel 1
 
 Summary:	Additional linear algebra functions for Octave
