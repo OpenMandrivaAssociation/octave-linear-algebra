@@ -4,10 +4,10 @@ Summary:	Additional linear algebra code, including general SVD and matrix functi
 Name:		octave-%{octpkg}
 Version:	2.2.3
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+ and LGPLv3+ and BSD
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 BuildArch:	noarch
 
 BuildRequires:	octave-devel >= 4.0.0
@@ -19,8 +19,6 @@ Requires(postun): octave
 
 %description
 Additional linear algebra code, including general SVD and matrix functions.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
