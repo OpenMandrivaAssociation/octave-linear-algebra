@@ -1,21 +1,22 @@
 %global octpkg linear-algebra
 
 Summary:	Additional linear algebra code, including general SVD and matrix functions
-Name:		octave-%{octpkg}
+Name:		octave-linear-algebra
 Version:	2.2.3
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+ and LGPLv3+ and BSD
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
-BuildArch:	noarch
+#Url:		https://packages.octave.org/linear-algebra/
+Source0:	https://downloads.sourceforge.net/octave/linear-algebra-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.0.0
+BuildRequires:  octave-devel >= 4.0.0
 
 Requires:	octave(api) = %{octave_api}
 
 Requires(post): octave
 Requires(postun): octave
+
+BuildArch:	noarch
 
 %description
 Additional linear algebra code, including general SVD and matrix functions.
@@ -30,9 +31,6 @@ Additional linear algebra code, including general SVD and matrix functions.
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %octave_pkg_build
