@@ -2,8 +2,8 @@
 
 Summary:	Additional linear algebra code, including general SVD and matrix functions
 Name:		octave-linear-algebra
-Version:	2.2.3
-Release:	3
+Version:	2.2.4
+Release:	1
 License:	GPLv3+ and LGPLv3+ and BSD
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/linear-algebra/
@@ -30,7 +30,7 @@ Additional linear algebra code, including general SVD and matrix functions.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}-%{version}
+%autosetup -p1 -n linear-algebra-2.2.4
 
 %build
 %octave_pkg_build
